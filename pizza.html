@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Hello World</title>
+        <link rel="stylesheet" type="text/css" href="sample.css">
+        <script language="javascript" src="sample.js"></script>
+        <script type="text/javascript" src="data.json"></script>
+        <!--<script type="text/javascript" src="newdata.json"></script>-->
+    </head>
+    <body>
+    <div id="wrap">
+        <div class="left">
+<select class="comboBox bloodType" id="bType"><option/></select>
+<select class="comboBox pizzaChoice" id="pChoice" onchange="selectChoice()"><option/></select>
+<select class="comboBox pizzaFlavor" id="pFlavor1" onchahge="selectFlavor()"><option/></select>
+<select class="comboBox pizzaFlavor" id="pFlavor2"><option/></select>
+<tr>
+    <td><h3>Size</h3><select class="comboBox pizzaSize" id="pSize" onchange="sizeOnChange()"><option/></select></td>
+</tr>
+<button onclick="SelectionAll()">Show Pizza Price</button>
+        <div>
+            <table style="margin-left: auto; margin-right: auto;">
+                <tr>
+                    <td>Addons</td>
+                    <td><select class="comboBox" id="addOns"><option/></select></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button onclick="submitText()">Add</button>
+                        <button onclick="clearText()">Remove</button></td>
+                </tr>
+            </table>
+        </div>
+        </div>
+</div>
+<div>
+        <div class="right">
+            <div class="center"><p class="pizzaPrice" id="pPrice"></p>
+<h3 id="priceTotal"></h3></div>
+        </div>
+    </div>    
+    </body>
+</html>
